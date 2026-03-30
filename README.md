@@ -1,14 +1,15 @@
-# Naver Blog Backup (cha_j212)
+# Naver Blog Backup
 
-이 저장소는 네이버 블로그 `cha_j212`의 공개 글을 백업하고 GitHub에서 관리하기 위한 두 가지 수집 방식을 함께 포함합니다.
+이 저장소는 여러 네이버 블로그의 공개 글을 백업하고 GitHub에서 관리하기 위한 두 가지 수집 방식을 함께 포함합니다.
 
 - Python 기반 전체 백업 스크립트: `backup_naver_blog.py`
 - Node.js 기반 카테고리 크롤러: `scripts/crawl-naver-board.mjs`
 
-기본 대상 카테고리는 아래 두 개입니다.
+기본 Node 크롤링 대상은 아래 세 카테고리입니다.
 
 - `https://blog.naver.com/PostList.naver?blogId=cha_j212&from=postList&categoryNo=16`
 - `https://blog.naver.com/PostList.naver?blogId=cha_j212&from=postList&categoryNo=17`
+- `https://blog.naver.com/PostList.naver?blogId=songkh87&from=postList&categoryNo=28`
 
 ## 포함 기능
 
@@ -67,7 +68,7 @@ export/
 
 ## 2. Node 카테고리 크롤러
 
-Node 스크립트는 특정 카테고리 글을 빠르게 수집해 `data/` 와 `posts/` 에 저장하는 용도입니다. 기본값은 카테고리 `16,17` 을 함께 수집합니다.
+Node 스크립트는 특정 카테고리 글을 빠르게 수집해 `data/` 와 `posts/` 에 저장하는 용도입니다. 기본값은 `cha_j212:16,17` 과 `songkh87:28` 을 함께 수집합니다.
 
 ### 설치
 
@@ -87,6 +88,12 @@ npm run crawl
 NAVER_BLOG_ID=cha_j212 NAVER_CATEGORY_NOS=16,17 npm run crawl
 ```
 
+여러 블로그를 한 번에 지정하려면:
+
+```bash
+NAVER_TARGETS='cha_j212:16,17;songkh87:28' npm run crawl
+```
+
 일부만 시험하려면:
 
 ```bash
@@ -98,7 +105,10 @@ MAX_POSTS=3 npm run crawl
 ```bash
 data/posts.json
 data/full-posts.json
-posts/*.md
+data/cha_j212/posts.json
+data/songkh87/posts.json
+posts/cha_j212/*.md
+posts/songkh87/*.md
 ```
 
 ## GitHub Actions
@@ -108,7 +118,7 @@ posts/*.md
 - 수동 실행 가능
 - 매일 `09:00 KST` 자동 실행
 - `npm ci`
-- `npm run crawl`
+- `NAVER_TARGETS='cha_j212:16,17;songkh87:28' npm run crawl`
 - 변경 사항이 있으면 자동 커밋/푸시
 
 ## GitHub 업로드

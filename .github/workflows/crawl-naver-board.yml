@@ -26,6 +26,8 @@ jobs:
         run: npm ci
 
       - name: Crawl board
+        env:
+          NAVER_TARGETS: cha_j212:16,17;songkh87:28
         run: npm run crawl
 
       - name: Commit updated data
