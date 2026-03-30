@@ -15,7 +15,11 @@ const dataDir = path.join(rootDir, "data");
 const postsDir = path.join(rootDir, "posts");
 
 const BLOG_ID = process.env.NAVER_BLOG_ID ?? "cha_j212";
-const CATEGORY_NO = process.env.NAVER_CATEGORY_NO ?? "16";
+const CATEGORY_INPUT =
+  process.env.NAVER_CATEGORY_NOS ?? process.env.NAVER_CATEGORY_NO ?? "16,17";
+const CATEGORY_NOS = [...new Set(CATEGORY_INPUT.split(",").map((value) => value.trim()))].filter(
+  Boolean
+);
 const COUNT_PER_PAGE = Number(process.env.COUNT_PER_PAGE ?? "30");
 const MAX_POSTS = Number(process.env.MAX_POSTS ?? "0");
 
@@ -62,14 +66,14 @@ async function ensureCleanOutputDir() {
   await mkdir(postsDir, { recursive: true });
 }
 
-async function fetchPostListPage(page) {
+async function fetchPostListPage(page, categoryNo) {
   const url = "https://blog.naver.com/PostTitleListAsync.naver";
   const response = await client.get(url, {
     params: {
       blogId: BLOG_ID,
       viewdate: "",
       currentPage: String(page),
-      categoryNo: CATEGORY_NO,
+      categoryNo,
       parentCategoryNo: "",
       countPerPage: String(COUNT_PER_PAGE)
     }
@@ -87,31 +91,51 @@ async function fetchPostListPage(page) {
 }
 
 async function fetchAllPostsMeta() {
-  const firstPage = await fetchPostListPage(1);
-  const totalCount = Number(firstPage.totalCount ?? 0);
-  const totalPages = Math.max(1, Math.ceil(totalCount / COUNT_PER_PAGE));
+  const categorySummaries = [];
+  const postsByLogNo = new Map();
+  let blog;
 
-  const posts = [...(firstPage.postList ?? [])];
+  for (const categoryNo of CATEGORY_NOS) {
+    const firstPage = await fetchPostListPage(1, categoryNo);
+    const totalCount = Number(firstPage.totalCount ?? 0);
+    const totalPages = Math.max(1, Math.ceil(totalCount / COUNT_PER_PAGE));
+    const categoryPosts = [...(firstPage.postList ?? [])];
 
-  for (let page = 2; page <= totalPages; page += 1) {
-    const pageData = await fetchPostListPage(page);
-    posts.push(...(pageData.postList ?? []));
+    blog ??= firstPage.blog;
+
+    for (let page = 2; page <= totalPages; page += 1) {
+      const pageData = await fetchPostListPage(page, categoryNo);
+      categoryPosts.push(...(pageData.postList ?? []));
+    }
+
+    categorySummaries.push({
+      categoryNo,
+      totalCount,
+      totalPages
+    });
+
+    for (const post of categoryPosts) {
+      postsByLogNo.set(String(post.logNo), {
+        logNo: String(post.logNo),
+        title: decodeTitle(post.title),
+        date: post.addDate,
+        categoryNo: String(post.categoryNo),
+        url: `https://blog.naver.com/${BLOG_ID}/${post.logNo}`,
+        mobileUrl: `https://m.blog.naver.com/PostView.naver?blogId=${BLOG_ID}&logNo=${post.logNo}`
+      });
+    }
   }
 
+  const posts = [...postsByLogNo.values()].sort((left, right) =>
+    right.logNo.localeCompare(left.logNo)
+  );
   const limitedPosts = MAX_POSTS > 0 ? posts.slice(0, MAX_POSTS) : posts;
 
   return {
-    blog: firstPage.blog,
-    totalCount,
-    totalPages,
-    posts: limitedPosts.map((post) => ({
-      logNo: String(post.logNo),
-      title: decodeTitle(post.title),
-      date: post.addDate,
-      categoryNo: String(post.categoryNo),
-      url: `https://blog.naver.com/${BLOG_ID}/${post.logNo}`,
-      mobileUrl: `https://m.blog.naver.com/PostView.naver?blogId=${BLOG_ID}&logNo=${post.logNo}`
-    }))
+    blog,
+    categorySummaries,
+    totalCount: limitedPosts.length,
+    posts: limitedPosts
   };
 }
 
@@ -248,7 +272,8 @@ function toMarkdownDocument(post) {
     `# ${post.title}`,
     "",
     `- Blog ID: ${BLOG_ID}`,
-    `- Category: ${post.category || CATEGORY_NO}`,
+    `- Category: ${post.category || post.categoryNo}`,
+    `- Category No: ${post.categoryNo}`,
     `- Author: ${post.author || ""}`,
     `- Published At: ${post.publishedAt || ""}`,
     `- URL: ${post.url}`,
@@ -264,11 +289,23 @@ async function saveOutputs(posts) {
     title: post.title,
     author: post.author,
     category: post.category,
+    categoryNo: post.categoryNo,
     publishedAt: post.publishedAt,
     url: post.url,
     file: `posts/${post.logNo}.md`,
     excerpt: post.text.slice(0, 220)
   }));
+
+  const totalByCategory = posts.reduce((accumulator, post) => {
+    const key = post.categoryNo;
+    accumulator[key] ??= {
+      categoryNo: post.categoryNo,
+      category: post.category,
+      totalPosts: 0
+    };
+    accumulator[key].totalPosts += 1;
+    return accumulator;
+  }, {});
 
   for (const post of posts) {
     const markdownPath = path.join(postsDir, `${post.logNo}.md`);
@@ -281,8 +318,10 @@ async function saveOutputs(posts) {
       {
         crawledAt: new Date().toISOString(),
         blogId: BLOG_ID,
-        categoryNo: CATEGORY_NO,
+        categoryNo: CATEGORY_NOS.join(","),
+        categoryNos: CATEGORY_NOS,
         totalPosts: posts.length,
+        totalByCategory: Object.values(totalByCategory),
         posts: index
       },
       null,
@@ -297,8 +336,10 @@ async function saveOutputs(posts) {
       {
         crawledAt: new Date().toISOString(),
         blogId: BLOG_ID,
-        categoryNo: CATEGORY_NO,
+        categoryNo: CATEGORY_NOS.join(","),
+        categoryNos: CATEGORY_NOS,
         totalPosts: posts.length,
+        totalByCategory: Object.values(totalByCategory),
         posts
       },
       null,
@@ -309,15 +350,21 @@ async function saveOutputs(posts) {
 }
 
 async function main() {
-  console.log(`Crawling blogId=${BLOG_ID}, categoryNo=${CATEGORY_NO}`);
+  console.log(`Crawling blogId=${BLOG_ID}, categoryNos=${CATEGORY_NOS.join(",")}`);
 
   await ensureCleanOutputDir();
 
   const list = await fetchAllPostsMeta();
   const posts = [];
 
+  for (const summary of list.categorySummaries) {
+    console.log(
+      `- Category ${summary.categoryNo}: ${summary.totalCount} posts across ${summary.totalPages} page(s)`
+    );
+  }
+
   for (const post of list.posts) {
-    console.log(`- Fetching ${post.logNo} ${post.title}`);
+    console.log(`- Fetching [${post.categoryNo}] ${post.logNo} ${post.title}`);
     const detail = await fetchPostDetail(post);
     posts.push(detail);
   }

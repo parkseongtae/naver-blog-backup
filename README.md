@@ -5,9 +5,10 @@
 - Python 기반 전체 백업 스크립트: `backup_naver_blog.py`
 - Node.js 기반 카테고리 크롤러: `scripts/crawl-naver-board.mjs`
 
-기본 대상 카테고리는 아래 URL입니다.
+기본 대상 카테고리는 아래 두 개입니다.
 
 - `https://blog.naver.com/PostList.naver?blogId=cha_j212&from=postList&categoryNo=16`
+- `https://blog.naver.com/PostList.naver?blogId=cha_j212&from=postList&categoryNo=17`
 
 ## 포함 기능
 
@@ -66,7 +67,7 @@ export/
 
 ## 2. Node 카테고리 크롤러
 
-Node 스크립트는 특정 카테고리 글을 빠르게 수집해 `data/` 와 `posts/` 에 저장하는 용도입니다.
+Node 스크립트는 특정 카테고리 글을 빠르게 수집해 `data/` 와 `posts/` 에 저장하는 용도입니다. 기본값은 카테고리 `16,17` 을 함께 수집합니다.
 
 ### 설치
 
@@ -80,10 +81,10 @@ npm install
 npm run crawl
 ```
 
-환경변수로 다른 블로그/카테고리에도 재사용할 수 있습니다.
+환경변수로 다른 블로그나 여러 카테고리에도 재사용할 수 있습니다.
 
 ```bash
-NAVER_BLOG_ID=cha_j212 NAVER_CATEGORY_NO=16 npm run crawl
+NAVER_BLOG_ID=cha_j212 NAVER_CATEGORY_NOS=16,17 npm run crawl
 ```
 
 일부만 시험하려면:
