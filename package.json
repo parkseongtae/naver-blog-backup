@@ -1,0 +1,15 @@
+{
+  "name": "naver-blog-board-crawler",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crawl a Naver Blog category and store the result in a GitHub-friendly format.",
+  "scripts": {
+    "crawl": "node scripts/crawl-naver-board.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "he": "^1.2.0"
+  }
+}
