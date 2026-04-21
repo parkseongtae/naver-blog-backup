@@ -1,6 +1,6 @@
 {
-  "crawledAt": "2026-04-20T02:56:40.847Z",
-  "totalPosts": 127,
+  "crawledAt": "2026-04-21T02:50:10.915Z",
+  "totalPosts": 128,
   "totalByBlog": [
     {
       "blogId": "cha_j212",
@@ -9,7 +9,7 @@
         "16",
         "17"
       ],
-      "totalPosts": 50,
+      "totalPosts": 51,
       "dataFile": "data/cha_j212/posts.json"
     },
     {
@@ -23,6 +23,19 @@
     }
   ],
   "posts": [
+    {
+      "blogId": "cha_j212",
+      "logNo": "224259452310",
+      "title": "반폐쇄성도발성 시 발성 역치 압력의 변화",
+      "author": "성대쟁이",
+      "category": "발성 생체역학",
+      "categoryNo": "16",
+      "requestedCategoryNo": "16",
+      "publishedAt": "7시간 전",
+      "url": "https://blog.naver.com/cha_j212/224259452310",
+      "file": "posts/cha_j212/224259452310.md",
+      "excerpt": "Titze (2009)  Phonation Threshold Pressure Measurement With a SemiOccluded Vocal Tract\n발성 역치 압력이란 성대가 진동을 개시하고 유지하기 위해 필요로 하는 최소한의 호흡 압력입니다. 비선형 역학에서는 진동 역치 압력 (Oscillation threshold pressure)로 많이 알려져 있습니다. 이제 이에 대한 기본 개"
+    },
     {
       "blogId": "cha_j212",
       "logNo": "224228491538",
