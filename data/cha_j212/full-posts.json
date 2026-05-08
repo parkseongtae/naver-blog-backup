@@ -1,5 +1,5 @@
 {
-  "crawledAt": "2026-05-07T03:27:59.353Z",
+  "crawledAt": "2026-05-08T03:24:22.044Z",
   "blogId": "cha_j212",
   "blogName": "노래와 과학의 만남: 발성과학의 모든 것",
   "categoryNo": "16,17",
@@ -18,12 +18,12 @@
     {
       "categoryNo": "17",
       "categoryName": "음성 임상",
-      "totalCount": 6,
+      "totalCount": 7,
       "totalPages": 1,
       "source": "desktop"
     }
   ],
-  "totalPosts": 51,
+  "totalPosts": 52,
   "totalByCategory": [
     {
       "categoryNo": "16",
@@ -33,10 +33,25 @@
     {
       "categoryNo": "17",
       "category": "음성 임상",
-      "totalPosts": 6
+      "totalPosts": 7
     }
   ],
   "posts": [
+    {
+      "blogId": "cha_j212",
+      "logNo": "224278411424",
+      "title": "공명 튜브와 빨대 발성 이후 성대에서 성도로 전달되는 에너지 변화",
+      "date": "7시간 전",
+      "category": "음성 임상",
+      "categoryNo": "17",
+      "requestedCategoryNo": "17",
+      "url": "https://blog.naver.com/cha_j212/224278411424",
+      "mobileUrl": "https://m.blog.naver.com/PostView.naver?blogId=cha_j212&logNo=224278411424",
+      "author": "성대쟁이",
+      "publishedAt": "7시간 전",
+      "markdown": "![Guzman et al\\. \\(2013\\) \\- Vocal Tract and Glottal Function During and After Vocal Exercising With Resonance Tube and Straw](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMjYw/MDAxNzI0NDQwMjU3MTc0.fJiI_Av4lNNFl2WL6AE6yYa5YP7jQiAy2--4v-o4c58g.v6uz6CJ_Hro2zOYAA9JZITDKwnOxNYuoFus_66sjbhEg.PNG/image.png?type=w800)\n*Guzman et al. (2013) - Vocal Tract and Glottal Function During and After Vocal Exercising With Resonance Tube and Straw*\n\n성문 유동은 성도의 음향 압력에 의해 영향을 받는 걸로 알려져 있습니다. 유동은 이너턴스에 의해서 오른쪽으로 쏠리면서 그로 인해 발생하는 배음도 달라지게 됩니다.\n만약에 이너턴스 현상이 없었다면 유동은 비교적으로 좌우 대칭이 이루며 고주파 배음들이 사라지는 비교적 사인파 형식의 진동을 하게 됩니다. 반면에 유동이 오른쪽으로 쏠리면 스펙트럼 기울기가 더 줄고 그로 인해 고주파 배음들이 비교적으로 더 커집니다.\n또한 빨대 발성과 같은 반폐쇄성도발성을 하면 성도 모양에도 변화가 옵니다. 증가하는 구강압에 따라서 파스칼의 법칙에 의해 그 압력은 성도 모든 외벽에 작용하게 됩니다. 그로 인해 성도의 변화가 올 것으로 예상이 되죠.\n이번 연구는 반폐쇄성도발성을 하고 성도 크기의 변화와 그 변화된 성도와 유동의 상호작용으로 공기역학적 에너지가 음향 에너지로 어떻게 변환 되었는지 확인해 보겠습니다.\n1명의 성악 기반 훈련된 가수를 기준으로 실험을 진행했습니다.\n발성을 하는 동시에 CT 촬영을 해서 성도의 공간을 확인해 보았으며 과제는 다음과 같았습니다:\n/아/ 모음 연장 발성\n공명 튜브에 입 대고 /아/ 발성 15분간 실시\n/아/ 모음 연장 발성\n이렇게 해서 전-후 기준 /아/ 모음 연장 발성 시 달라진 지표들을 확인한 것이죠.\n공명 튜브의 길이는 27cm, 직경은 9mm였습니다.\n모든 과제는 편한 음도와 강도에서 실시가 되었습니다.\n위 과제가 끝난 후 15분 동안 완벽한 음성 휴식을 취한 후 대상자는\n빨대 발성 15분 실시\n/아/ 모음 연장 발성\n위 두 과제를 또 실시하였습니다.\n빨대의 길이는 13.7cm, 직경은 2.5mm였습니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMTU4/MDAxNzI0NDQxOTQ4NjEz.Khoteggr6_dAaVR3AQYwzazHXOGOcwRe_72pn5Hw9oog.JUqNq4t_yhEe1dB6eKW-3-8PWfEvngfYOpzHsjUYmD4g.PNG/image.png?type=w800)\n\n총 5개의 과제를 2번을 반복해서 CT 촬영을 해서 10개의 정중앙시상면 데이터를 얻었습니다. 그 이후 후두 상승 정도(1), 가로 성도 길이 (2), 입술 크기 (3), 턱 내린 정도 (4), 혀 높이 (5), 구인두강 상-하길이 (6), 연구개 상승 정도 (7), 하인두강 전-후 길이 (8)를 측정했습니다.\n너비로는 구강(A1), 인두강(A2), 상후두관(A3)을 측정했습니다.\n추가적으로 횡단면에서 봤을 때 인두강의 너비 (Ap)와 상후두관 너비 (Ae)를 확인했습니다.\n결과 보겠습니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfNDEg/MDAxNzI0NDQxOTYwNTQw.ghW5-M1Xr4LZbzDKgVSfvodUj8BQH1ROMo8D-K3agYgg.xk0PiBi8ec7q6OKNgXG8lZPBgXnuSEXJPSxR9BBaYVYg.PNG/image.png?type=w800)\n\n위에 기재한 1번부터 8번 순으로 가로 x축이 나타납니다.\ny축은 길이 mm입니다.\nBT는 튜브 발성 전 베이스라인 /아/, DT는 튜브 도중, AT는 튜브 후 /아/, DS는 빨대 발성 도중, AS는 빨대 발성 후 /아/입니다.\n연구개 상승 정도에 DT가 두 번 나오는 것은 오타이고 오른쪽 DT가 DS로 표기되어야 맞습니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfNzAg/MDAxNzI0NDQyMDkwODEw.6FR5VRfg9aTF_gg7vwTqRzkUO_257BkPnMy8XgBZHqwg.71d7LhDyHH5GaDdXGHn0s0aHnClEeP4c7lsF_yjKG9Mg.PNG/image.png?type=w800)\n\n위 그림은 왼쪽부터 튜브 발성하기 전, 중, 후의 정중앙 시상 단면입니다. 전후로 가장 큰 변화는 연구개의 상승 정도와 후두 위치 하강입니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMTk4/MDAxNzI0NDQyMTE4MzAy.s4kt-OLX0RZDB8D1w3ELL5hW7WsRlchqvd6K2ND6K9Eg.hGZVFg39_2bfWvK4F6S4YW3H3H5v2ZrA3jxWOSZK3ggg.PNG/image.png?type=w800)\n\n위 그림은 왼쪽부터 빨대 발성 전, 중, 후의 정중앙 시상 단면입니다. 튜브 발성과 마찬가지로 가장 큰 변화는 연구개 상승 정도와 후두 위치 하강입니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfNTkg/MDAxNzI0NDQyMzMxMTkz.D4-E_n3cgrRArzI70VIR6bvtS5w8QYNLMYvrrLwTbFwg.flSrAySFP5a44aH-WumYOqDvVt76LtYLRHivzw2KDn4g.PNG/image.png?type=w800)\n\n이제 단면적 비교 그래프입니다.\n상후두관 횡단 단면적은 공명 튜브 발성과 빨대 발성했을 때 이후에 더 작아졌고, 정중앙시상면으로 봤을 때 인두강과 구강 역시 좁아졌습니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMTc3/MDAxNzI0NDQyNDY3MDY1.FoX9yJrYNv3AlYxYNWMC9hg7r8D9VI7K2jKxn31nndEg.3oWzpXThWMAr3nAnag0xYCm9fI_CxBQNxOP9AZF1O74g.PNG/image.png?type=w800)\n\n위 그림은 왼쪽부터 튜브 발성하기 전, 중, 그리고 빨대 발성 중 횡단면입니다. 횡단 인두강 면적이 더 증가한 것이 확연히 보입니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMjEy/MDAxNzI0NDQyNTQ5OTQ2.MW52DvR7MFUYf7H7V3blz0Gq77ihctrrVaHZeIsBi9kg.WEMkFrhlFzH_COqvIVEKHXxF3NLSU1fkF7MyVKecREUg.PNG/image.png?type=w800)\n\n마찬가지로 빨대 전/중입니다. 상후두관 단면도 더 커진 것이 보입니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMjk2/MDAxNzI0NDQyNzI5NjU2.E4Lk8CrSP9zIEMg1xE-rH6hNEAcVLbX8Qg6OobcMoJgg.9-HY1cIqZHQ7og0cX9x0SXzNtwmqyX6OAyZnutSDi_Qg.PNG/image.png?type=w800)\n\n마지막으로 왼쪽부터 튜브 발성 전, 튜브 발성 후, 빨대 발성 후입니다. 전반적으로 반폐쇄성도 발성을 한 이후에 상후두관 단면적이 줄어든 것이 보입니다.\n\n이게 목소리에 어떤 영향을 끼칠까요?\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMjU3/MDAxNzI0NDQyNzg0MDU5.nDTB1n58g9Kh8q52QcdXH6YastVm7VBgb5TLtKPd8o4g.L98Rloo1TNYoHnm8CmQ0eHAOPMHtgsXkkcrN_7eZx4wg.PNG/image.png?type=w800)\n\n위 그래프는 튜브 발성하기 전(얇은 선)과 후(굵은 선) /아/ 모음 연장 발성했을 때, 아래 그래프는 빨대 발성하기 전(얇은 선)과 후(굵은 선) /아/ 모음 연장 발성했을 때 스펙트럼 분석 결과입니다.\n보편적으로 반폐쇄성도발성 훈련을 했을 시, 가수 음형대 구간이 전반적으로 증가한 것이 보입니다. 이는 빨대 발성 전/후 결과에서 특히 두드러지게 나타납니다. 아마 이것은 좁아진 상후두관에 의해서 발생한 것으로 추측됩니다.\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfNTcg/MDAxNzI0NDQzMDEyMDYy.4njvU16ShNBf_MwhW3ruiXQinozOZSch8wrMOjni9lgg.IReKij5P52ktlaI2C7UvDFsgjlK3DvcgZGB90LHGAxcg.PNG/image.png?type=w800)\n\n![image](https://mblogthumb-phinf.pstatic.net/MjAyNDA4MjRfMjgx/MDAxNzI0NDQzMDg5MDc5.xkrMWHT-cZFu09YJWAzWx8jRThE6j3cPfUDfpSapZX8g.eN7IZR25yXGYIORQprRb1QbZi-YSJekfxFvl0O84-V4g.PNG/image.png?type=w800)\n\n마지막으로 위 그림은 위에서 아래 순으로 빨대 발성하기 전, 중, 후 EGG 파형 모양과 CQ 값들입니다. 반폐쇄성도 발성을 하는 도중 EGG 파형이 조금 더 직사각형화 되는것이 관찰되기도 합니다. 그리고 반폐쇄성도 발성 이후에 CQ는 내려간 것이 확인됩니다. 저자들은 이 현상에 원인을 증가한 성문상압에 의해서 증가한 성문내압 때문, 또는 내려간 후두 위치에 의해서 부분적으로 발생했을 것으로 말했습니다. 이미 Iwarsson et al. (1998)과 Iwarsson & Sundberg (1998)에 의하면 대상자들의 후두를 내리며 기도를 아래로 잡아당기는 현상이 성대 외전과 동반되는 것이 관찰되었기 때문이죠.\n이 연구를 토대로 반폐쇄성도발성 훈련법이 단순히 이론적으로 도움 되는 것이 아니라 해부적으로, 생리적으로도 발성 기관의 변화를 일으키고, 음향적으로도 도움이 된다는 결과가 나왔습니다.",
+      "text": "Guzman et al. (2013)  Vocal Tract and Glottal Function During and After Vocal Exercising With Resonance Tube and Straw\n성문 유동은 성도의 음향 압력에 의해 영향을 받는 걸로 알려져 있습니다. 유동은 이너턴스에 의해서 오른쪽으로 쏠리면서 그로 인해 발생하는 배음도 달라지게 됩니다.\n만약에 이너턴스 현상이 없었다면 유동은 비교적으로 좌우 대칭이 이루며 고주파 배음들이 사라지는 비교적 사인파 형식의 진동을 하게 됩니다. 반면에 유동이 오른쪽으로 쏠리면 스펙트럼 기울기가 더 줄고 그로 인해 고주파 배음들이 비교적으로 더 커집니다.\n또한 빨대 발성과 같은 반폐쇄성도발성을 하면 성도 모양에도 변화가 옵니다. 증가하는 구강압에 따라서 파스칼의 법칙에 의해 그 압력은 성도 모든 외벽에 작용하게 됩니다. 그로 인해 성도의 변화가 올 것으로 예상이 되죠.\n이번 연구는 반폐쇄성도발성을 하고 성도 크기의 변화와 그 변화된 성도와 유동의 상호작용으로 공기역학적 에너지가 음향 에너지로 어떻게 변환 되었는지 확인해 보겠습니다.\n1명의 성악 기반 훈련된 가수를 기준으로 실험을 진행했습니다.\n발성을 하는 동시에 CT 촬영을 해서 성도의 공간을 확인해 보았으며 과제는 다음과 같았습니다:\n/아/ 모음 연장 발성\n공명 튜브에 입 대고 /아/ 발성 15분간 실시\n/아/ 모음 연장 발성\n이렇게 해서 전후 기준 /아/ 모음 연장 발성 시 달라진 지표들을 확인한 것이죠.\n공명 튜브의 길이는 27cm, 직경은 9mm였습니다.\n모든 과제는 편한 음도와 강도에서 실시가 되었습니다.\n위 과제가 끝난 후 15분 동안 완벽한 음성 휴식을 취한 후 대상자는\n빨대 발성 15분 실시\n/아/ 모음 연장 발성\n위 두 과제를 또 실시하였습니다.\n빨대의 길이는 13.7cm, 직경은 2.5mm였습니다.\n총 5개의 과제를 2번을 반복해서 CT 촬영을 해서 10개의 정중앙시상면 데이터를 얻었습니다. 그 이후 후두 상승 정도(1), 가로 성도 길이 (2), 입술 크기 (3), 턱 내린 정도 (4), 혀 높이 (5), 구인두강 상하길이 (6), 연구개 상승 정도 (7), 하인두강 전후 길이 (8)를 측정했습니다.\n너비로는 구강(A1), 인두강(A2), 상후두관(A3)을 측정했습니다.\n추가적으로 횡단면에서 봤을 때 인두강의 너비 (Ap)와 상후두관 너비 (Ae)를 확인했습니다.\n결과 보겠습니다.\n위에 기재한 1번부터 8번 순으로 가로 x축이 나타납니다.\ny축은 길이 mm입니다.\nBT는 튜브 발성 전 베이스라인 /아/, DT는 튜브 도중, AT는 튜브 후 /아/, DS는 빨대 발성 도중, AS는 빨대 발성 후 /아/입니다.\n연구개 상승 정도에 DT가 두 번 나오는 것은 오타이고 오른쪽 DT가 DS로 표기되어야 맞습니다.\n위 그림은 왼쪽부터 튜브 발성하기 전, 중, 후의 정중앙 시상 단면입니다. 전후로 가장 큰 변화는 연구개의 상승 정도와 후두 위치 하강입니다.\n위 그림은 왼쪽부터 빨대 발성 전, 중, 후의 정중앙 시상 단면입니다. 튜브 발성과 마찬가지로 가장 큰 변화는 연구개 상승 정도와 후두 위치 하강입니다.\n이제 단면적 비교 그래프입니다.\n상후두관 횡단 단면적은 공명 튜브 발성과 빨대 발성했을 때 이후에 더 작아졌고, 정중앙시상면으로 봤을 때 인두강과 구강 역시 좁아졌습니다.\n위 그림은 왼쪽부터 튜브 발성하기 전, 중, 그리고 빨대 발성 중 횡단면입니다. 횡단 인두강 면적이 더 증가한 것이 확연히 보입니다.\n마찬가지로 빨대 전/중입니다. 상후두관 단면도 더 커진 것이 보입니다.\n마지막으로 왼쪽부터 튜브 발성 전, 튜브 발성 후, 빨대 발성 후입니다. 전반적으로 반폐쇄성도 발성을 한 이후에 상후두관 단면적이 줄어든 것이 보입니다.\n이게 목소리에 어떤 영향을 끼칠까요?\n위 그래프는 튜브 발성하기 전(얇은 선)과 후(굵은 선) /아/ 모음 연장 발성했을 때, 아래 그래프는 빨대 발성하기 전(얇은 선)과 후(굵은 선) /아/ 모음 연장 발성했을 때 스펙트럼 분석 결과입니다.\n보편적으로 반폐쇄성도발성 훈련을 했을 시, 가수 음형대 구간이 전반적으로 증가한 것이 보입니다. 이는 빨대 발성 전/후 결과에서 특히 두드러지게 나타납니다. 아마 이것은 좁아진 상후두관에 의해서 발생한 것으로 추측됩니다.\n마지막으로 위 그림은 위에서 아래 순으로 빨대 발성하기 전, 중, 후 EGG 파형 모양과 CQ 값들입니다. 반폐쇄성도 발성을 하는 도중 EGG 파형이 조금 더 직사각형화 되는것이 관찰되기도 합니다. 그리고 반폐쇄성도 발성 이후에 CQ는 내려간 것이 확인됩니다. 저자들은 이 현상에 원인을 증가한 성문상압에 의해서 증가한 성문내압 때문, 또는 내려간 후두 위치에 의해서 부분적으로 발생했을 것으로 말했습니다. 이미 Iwarsson et al. (1998)과 Iwarsson & Sundberg (1998)에 의하면 대상자들의 후두를 내리며 기도를 아래로 잡아당기는 현상이 성대 외전과 동반되는 것이 관찰되었기 때문이죠.\n이 연구를 토대로 반폐쇄성도발성 훈련법이 단순히 이론적으로 도움 되는 것이 아니라 해부적으로, 생리적으로도 발성 기관의 변화를 일으키고, 음향적으로도 도움이 된다는 결과가 나왔습니다."
+    },
     {
       "blogId": "cha_j212",
       "logNo": "224259452310",

@@ -1,6 +1,6 @@
 {
-  "crawledAt": "2026-05-07T03:27:59.353Z",
-  "totalPosts": 128,
+  "crawledAt": "2026-05-08T03:24:22.044Z",
+  "totalPosts": 129,
   "totalByBlog": [
     {
       "blogId": "cha_j212",
@@ -9,7 +9,7 @@
         "16",
         "17"
       ],
-      "totalPosts": 51,
+      "totalPosts": 52,
       "dataFile": "data/cha_j212/posts.json"
     },
     {
@@ -23,6 +23,19 @@
     }
   ],
   "posts": [
+    {
+      "blogId": "cha_j212",
+      "logNo": "224278411424",
+      "title": "공명 튜브와 빨대 발성 이후 성대에서 성도로 전달되는 에너지 변화",
+      "author": "성대쟁이",
+      "category": "음성 임상",
+      "categoryNo": "17",
+      "requestedCategoryNo": "17",
+      "publishedAt": "7시간 전",
+      "url": "https://blog.naver.com/cha_j212/224278411424",
+      "file": "posts/cha_j212/224278411424.md",
+      "excerpt": "Guzman et al. (2013)  Vocal Tract and Glottal Function During and After Vocal Exercising With Resonance Tube and Straw\n성문 유동은 성도의 음향 압력에 의해 영향을 받는 걸로 알려져 있습니다. 유동은 이너턴스에 의해서 오른쪽으로 쏠리면서 그로 인해 발생하는 배음도 달라지게 됩니다.\n만약에 이너턴스 현"
+    },
     {
       "blogId": "cha_j212",
       "logNo": "224259452310",
