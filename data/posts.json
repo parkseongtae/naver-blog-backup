@@ -1,6 +1,6 @@
 {
-  "crawledAt": "2026-06-24T03:50:15.227Z",
-  "totalPosts": 129,
+  "crawledAt": "2026-06-25T03:51:07.575Z",
+  "totalPosts": 130,
   "totalByBlog": [
     {
       "blogId": "cha_j212",
@@ -9,7 +9,7 @@
         "16",
         "17"
       ],
-      "totalPosts": 52,
+      "totalPosts": 53,
       "dataFile": "data/cha_j212/posts.json"
     },
     {
@@ -23,6 +23,19 @@
     }
   ],
   "posts": [
+    {
+      "blogId": "cha_j212",
+      "logNo": "224326337539",
+      "title": "진동 중 성대 내 액체 움직임이 발성에 미치는 영향",
+      "author": "성대쟁이",
+      "category": "발성 생체역학",
+      "categoryNo": "16",
+      "requestedCategoryNo": "16",
+      "publishedAt": "12시간 전",
+      "url": "https://blog.naver.com/cha_j212/224326337539",
+      "file": "posts/cha_j212/224326337539.md",
+      "excerpt": "Kvit et al (2015)  Characterizing Liquid Redistribution in a Biphasic Vibrating Vocal Fold Using Finite Element Analysis\n성대 모델링에 또 새로운 관점을 제시한 논문에 대해서 소개를 드리겠습니다.\n지금까지 성대를 모델링 하기 위해 성대 조직의 역학적 수치들을 측정해서 유한 요소 모델링을 통해 진동 "
+    },
     {
       "blogId": "cha_j212",
       "logNo": "224278411424",
